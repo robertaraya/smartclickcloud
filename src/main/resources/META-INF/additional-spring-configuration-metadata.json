@@ -1,0 +1,62 @@
+{"properties": [
+  {
+    "name": "app.auth.token-secret",
+    "type": "java.lang.String",
+    "description": "A description for 'app.auth.token-secret'"
+  },
+  {
+    "name": "mdbapi.api-url",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.api-url'"
+  },
+  {
+    "name": "app.auth.tokenExpirationMsec",
+    "type": "java.lang.String",
+    "description": "A description for 'app.auth.tokenExpirationMsec'"
+  },
+  {
+    "name": "mdbapi.apiKey",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiKey'"
+  },
+  {
+    "name": "mdbapi.apiSearchUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiSearchUrl'"
+  },
+  {
+    "name": "app.oauth2.authorized-redirect-uris",
+    "type": "java.lang.String[]",
+    "description": "A description for 'app.oauth2.authorized-redirect-uris'"
+  },
+  {
+    "name": "mdbapi.apiSearchMovie",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiSearchMovie'"
+  },
+  {
+    "name": "mdbapi.apiSearchTv",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiSearchTv'"
+  },
+  {
+    "name": "mdbapi.apiSearchMovieUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiSearchMovieUrl'"
+  },
+  {
+    "name": "mdbapi.apiSearchTvUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiSearchTvUrl'"
+  },
+  {
+    "name": "mdbapi.apiMovieUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiMovieUrl'"
+  },
+  {
+    "name": "mdbapi.apiTvUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'mdbapi.apiTvUrl'"
+  }
+]}

@@ -1,0 +1,9 @@
+type StoreCategory {
+	id: ID!
+	name: String
+	aliasList: [String]
+}
+
+type Query {
+	getCategories: [StoreCategory]!
+}

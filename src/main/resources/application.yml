@@ -1,0 +1,96 @@
+server:
+  port: 8077
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore/smartclickcloud.p12
+    key-store-password: Wmnnwlht85
+    key-alias: smartclickweb
+    enabled: true
+#logging:
+#  level:
+#    org.springframework.data: DEBUG
+spring:
+  data:
+    mongodb:
+     host: localhost
+     port: 27017
+     authentication-database: admin
+     username: appsmartclick
+     password: Wmnnwlhtscuclh8518*
+     database: SMARTCLICKLOCAL_DB
+     auto-index-creation: true
+     
+    rest:
+     basePath: /api
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: smartclickwebcr@gmail.com
+    password: ghoxlwrrcufjgdpx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size: 3MB
+      max-request-size: 3MB
+      enabled: true
+  security:
+      oauth2:
+        client:
+          registration:
+            google:
+              clientId: 4833692760-l6v8p0jnjg0b9u62s6guc3f6mfumfeoa.apps.googleusercontent.com
+              clientSecret: mLAVUSHmtj8zsM-2tcuQaKL2
+              redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+              scope:
+                - email
+                - profile
+            facebook:
+              clientId: 916654812075257
+              clientSecret: d9c76656850765ac20fcb7aee1a32e62
+              redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+              scope:
+                - email
+                - public_profile
+          provider:
+            facebook:
+              authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
+              tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
+              userInfoUri: https://graph.facebook.com/v13.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,picture.width(250).height(250)
+app:
+   auth:
+    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    tokenExpirationMsec: 864000000
+   oauth2:
+    authorizedRedirectUris:
+      - http://www.smartclickweb.com/oauth2/redirect
+      - http://www.propertyhuntercr.com/oauth2/redirect
+      - http://localhost:3000/oauth2/redirect
+      - http://192.168.0.111:3000/oauth2/redirect
+      - myandroidapp://oauth2/redirect
+      - myiosapp://oauth2/redirect
+      - exp://192.168.0.111:19000/oauth2/redirect
+      - exp://localhost:19000/oauth2/redirect
+      - http://localhost:19006/oauth2/redirect
+mdbapi:
+  apiMovieUrl: https://api.themoviedb.org/3/movie/
+  apiTvUrl: https://api.themoviedb.org/3/tv/
+  apiKey: "?api_key=d8d689a683469a7e52d071389f3bd5a7"
+  apiSearchMovieUrl: https://api.themoviedb.org/3/search/movie
+  apiSearchTvUrl: https://api.themoviedb.org/3/search/tv
+  
+graphql:
+  servlet:
+    enabled: false
+    mapping: /graphql
+  graphiql:
+    enabled: false
+  
+  
